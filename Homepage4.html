@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>panditprogrammer.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: arial;
+        }
+
+        .main {
+            width: 960px;
+            margin: auto;
+            background: url(agri.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .navbar {
+            height: 70px;
+            width: 100%;
+            background: #ffffff2f;
+        }
+
+        .navbar img {
+            height: 60px;
+            margin: 5px 23px;
+        }
+
+        .navbar ul {
+            float: right;
+            display: inline-block;
+            margin-right: 20px;
+
+        }
+
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+            line-height: 70px;
+            margin: 5px;
+            user-select: none;
+        }
+
+        .navbar ul li a {
+            color: #000000;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px 8px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.7s all;
+            user-select: none;
+        }
+
+        .navbar #active,
+        .navbar ul li a:hover {
+            background: rgb(224, 60, 60);
+        }
+
+        .center {
+            width: 100%;
+            text-align: center;
+            /* border: 2px solid blue; */
+
+        }
+
+        .center .items {
+            margin: 150px auto;
+            padding: 30px;
+            /* border: 2px solid greenyellow; */
+
+        }
+
+        .center .items h1 {
+            font-size: 50px;
+            color: tomato;
+            text-transform: capitalize;
+        }
+
+        .center .items h2 {
+            font-size: 35px;
+            color: #ffffff;
+            text-transform: capitalize;
+        }
+
+        .buttons {
+            padding: 8px 10px;
+            margin: 12px auto;
+        }
+
+        .buttons button {
+            padding: 8px 10px;
+            background: rgb(247, 97, 97);
+            color: black;
+            border-radius: 10px;
+            border-style: none;
+            transition: ease-in 0.4s;
+        }
+
+        .buttons button:hover {
+            background: #bb6f31;
+            cursor: pointer;
+
+        }
+
+        footer {
+            height: 60px;
+            background-color: #000000;
+        }
+
+        footer p {
+            text-align: center;
+            color: #ffffff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="navbar">
+                <img src="logo.png" alt="logo">
+                <ul>
+                    <li><a href="#" id="active">Home</a></li>
+                    <li><a href="#">Blogs </a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">contacts</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="center">
+            <div class="items">
+                <h1>Welcome To<br> PanditProgrammer.com</h1>
+                <h2>Create Something New</h2>
+                <div class="buttons">
+                    <button>Explore More</button>
+                    <button class="btn">Subscribe Us</button>
+                </div>
+
+            </div>
+            <footer>
+                <p>
+                    Copyright &copy; All rights are reserved by panditprogrammer.com 2020
+                </p>
+            </footer>
+        </div>
+    </div>    
+</body>
+
+</html>

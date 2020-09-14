@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home page by Chandanpandit</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="2"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main {
+			width:  960px;
+            margin: auto;
+             background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(mountainlight.jpg); 
+            /* This is image over lay for lite background */
+            /* background-size: cover; */
+            /* height: 100vh; */
+            background-color: rgba(48, 12, 33, 0.075);
+
+        }
+
+        nav {
+            height: 75px;
+            width: 100%;
+            background-color: rgba(108, 182, 243, 0.425)
+        }
+
+        nav ul {
+            float: right;
+            margin: 0px;
+            padding: 0px;
+            margin-right: 23px;
+			line-height:75px;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px;
+            display: inline-block;
+            user-select: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            padding: 5px 7px;
+            border: 1px groove black;
+            border-style: hidden;
+            border-radius: 8px;
+            user-select: none;
+        }
+
+        #active,
+        nav ul li a:hover {
+            transition:  ease-in 0.5s;
+            background-color: rgba(140, 191, 238, 0.568);
+            color: rgb(255, 255, 255);
+        }
+
+        nav img {
+            height: 50px;
+            width: 70px;
+            margin-left: 14px;
+
+        }
+
+        nav h1 {
+            display: inline-block;
+            line-height: 60px;
+            font-size: 1.7rem;
+            margin-left: 8px;
+            color: rgb(189, 45, 34);
+            user-select: none;
+        }
+
+        #head1 {
+            width: 400px;
+            margin: 100px auto;
+            color: rgb(63, 37, 37);
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #head1 span{
+            text-decoration: underline;
+        }
+
+        #para1 {
+            text-align: center;
+            margin: 5px 100px;
+            padding: 5px 16px;
+            color: blue;
+            font-size: 14px;
+        }
+
+        .maindiv {
+            width: 90%;
+            height: 300px;
+            margin: 5% auto;
+            /* border: 2px solid blue; */
+            display: flex;
+        }
+
+        .box {
+            width: 48%;
+            margin: 6px;
+            padding: 8px;
+            border: 1px solid black;
+            border-radius: 10px;
+            border-style: none;
+            overflow: auto;
+            background: rgba(255, 255, 255, 0.85);
+        }
+
+        .box p {
+            color: rgb(7, 7, 7);
+            padding: 10px;
+        }
+		footer{
+		color: #fff;
+		text-align:center;
+		justify-content:center;
+		height:50px;
+		line-height:50px;
+		background-color: #000;
+		}
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+    <header>
+        <nav>
+            <img src="logo.png" alt="logo_panditprogrammer">
+            <h1>Pandit Programmer</h1>
+            <ul>
+                <li><a href="#" id="active">Home</a></li>
+                <li><a href="https://facebook.com/panditprogrammer" target="blank">Facebook</a></li>
+                <li><a href="https://Youtube.com" target="blank">Youtube</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="https://instagram.com/panditprogrammer" target="blank">Instagram</a></li>
+                <li><a href="https://panditprogrammer.blogspot.com" target="blank">Blogs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="head1">
+        <h1>Hi , I am <span>Pandit Programmer</span>.Frontent web designer .</h1>
+    </div>
+    <p id="para1">This is Homepage completely designed .I have create  web pages using html and css. rem ipsum dolor sit, amet consectetur adipisicing elit. Eum doloremque odit reiciendis facere?
+                Expedita
+        only html and css.
+    </p>
+    <div class="maindiv">
+        <div class="box">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum doloremque odit reiciendis facere?
+                Expedita itaque eos libero. Quidem cupiditate expedita quibusdam porro delectus eaque maiores nobis
+                a pariatur corporis sint deserunt aut tempora voluptatem, ratione nostrum sunt illo debitis amet
+                molestiae esse vel neque? Minus quod autem cupiditate molestiae excepturi?</p>
+        </div>
+        <div class="box" id="right">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate sit dignissimos deserunt velit
+                ratione odio enim cumque atque accusantium illum. Animi reprehenderit voluptatibus nisi, ab commodi
+                asperiores suscipit optio iusto vero repellat eos? Incidunt reiciendis, repellendus repellat
+                reprehenderit saepe nam odio cupiditate laborum quaerat animi dolor itaque optio dolorem
+                voluptatibus!</p>
+        </div>
+    </div>
+	<footer>
+	<strong>Copyright &copy; All rights are reserved by PanditProgrammer.com2020</strong>
+    </footer>
+    </div>
+	
+</body>
+
+</html>
