@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        nav {
+            height: 80px;
+            width: 100%;
+            background-color: rgb(86, 128, 156);
+        }
+
+        #menu {
+            text-align: right;
+
+        }
+
+        #menu li {
+            list-style: none;
+            display: inline-block;
+            line-height: 80px;
+            text-align: center;
+
+        }
+
+        #menu li a {
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: bolder;
+            text-transform: capitalize;
+            color: rgb(40, 76, 100);
+            padding: 8px 12px;
+            transition: ease 0.5s;
+
+        }
+
+        #menu li a:hover {
+            color: rgb(151, 179, 197);
+
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        span {
+            margin: 0px 50px;
+            text-align: center;
+            font-size: 50px;
+            font-weight: bolder;
+            line-height: 80px;
+            cursor: pointer;
+            display: none;
+        }
+
+        @media screen and (max-width: 640px) {
+            #menu {
+                background-color: rgb(164, 190, 207);
+                display: none;
+
+            }
+
+            #menu li {
+                display: block;
+            }
+
+            #menu li a {
+                display: block;
+
+            }
+
+
+            #menu li a:hover {
+                background-color: rgb(151, 179, 197);
+                color: rgb(40, 76, 100);
+
+
+
+            }
+
+            span {
+                display: block;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="" alt="PP">
+            </div>
+            <span onclick="toggle()" id="tgle">&Congruent;</span>
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        function toggle() {
+            let x = document.getElementById("menu");
+
+            if (x.style.display == "block") {
+                x.style.display = "none";
+				tgle.innerHTML="&Congruent;";
+            }
+            else {
+                x.style.display = "block";
+				tgle.innerHTML="&times;";
+            }
+        }
+    </script>
+</body>
+
+</html>

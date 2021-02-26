@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive menu bar </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="toggle">&Congruent;</div>
+
+            <div class="menu">
+                <ul id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="" alt="PP" srcset="">
+            </div>
+        </nav>
+    </header>
+    <script>
+        let toggle = document.getElementById("toggle");
+        let menu = document.getElementById("menu");
+
+        toggle.onclick = function () {
+            if (menu.style.display == "flex") {
+                menu.style.display = "none";
+            }
+            else {
+                menu.style.display = "flex";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

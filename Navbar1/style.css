@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: #f3b96d;
+    justify-content: space-between;
+    position: fixed;
+}
+
+#toggle{
+    display: none;
+}
+ul {
+    margin-left: 50px;
+    
+}
+ul li{
+    list-style: none;    
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    font-family: monospace;
+    padding: 5px 10px;
+    line-height: 80px;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: rgb(35, 22, 44);
+    border-radius: 4px;
+    transition: ease 0.4s;
+
+}
+#menu li a:hover{
+    color: rgb(182, 182, 182);
+}
+
+.logo{
+    float: right;
+    position: absolute;
+    top: 17px;
+    right: 40px;
+    border: 1px solid black;
+    height: 50px;
+    width: 80px;
+    border-radius: 0px 14px 0px 14px;
+    
+
+}
+
+@media screen and (max-width:640px){
+    #toggle{
+        display: inline-block;
+        font-size: 50px;
+        font-weight: bolder;
+        margin-left: 50px;
+        line-height: 80px;
+        cursor: pointer;
+        user-select: none;
+    }
+    .logo{
+        width: 100px;
+        height: 50px;
+        border: 2px solid black;
+        border-radius: 0px 10px 0px 10px;
+    }
+    #menu{
+        display: none;
+        /* it should be flex */
+        flex-direction: column;
+        background: rgb(175, 148, 91);
+        text-align: center;
+        margin: 0px;
+        user-select: none;
+        
+    }
+    #menu li a{
+        display: block;
+        font-size: 25px;
+    }
+    #menu li a:hover{
+        background: rgb(209, 198, 177);
+        color: black;
+
+    }
+
+}
