@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator PanditProgrammer.com</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .mainwrapper {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: radial-gradient(rgb(217, 217, 233),rgb(188, 217, 226));
+        }
+
+        .container {
+            min-width: 340px;
+            height: 410px;
+            width: 340px;
+            border: 1px solid #b6b2b2;
+            border-radius: 12px;
+            padding: 8px;
+
+        }
+        .btn{
+            padding: 5px;
+            border: 1px solid #201818;
+            border-radius: 8px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+
+        .btn input {
+            width: 74px;
+            height: 40px;
+            outline: none;
+            background: lightgray;
+            font-size: 24px;
+            margin: 10px auto;
+
+
+        }
+
+        .display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            width: 100%;
+
+        }
+
+        .display input {
+            width: 95%;
+            height: 50px;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 28px;
+            border-radius: 5px;
+            outline: none;
+            background-image:linear-gradient(#f4fdfd,#f1f1f1);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        h3{
+            position: absolute;
+            top: 5%;
+            margin: 10px auto;
+            color: rgba(135, 207, 235, 0.719);
+            font-style: italic;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainwrapper">
+        <h3>PanditProgrammer.com</h3>
+        <div class="container">
+            <form action="">
+                <div class="display">
+                    <input type="text" name="disp" id="disp" autocomplete="off">
+                </div>
+                <div class="btn">
+                    <div class="row">
+                        <input type="button" value="">
+                        <input type="button" value="">
+                        <input type="button" value="">
+                        <input type="button" value="Clear" onclick="form.disp.value =''" style="font-size: 14px ;">
+                    </div>
+                    <div class="row">
+                        <input type="button" value="">
+                        <input type="button" value="">
+                        <input type="button" value="">
+                        <input type="button" value="/" onclick="form.disp.value+='/'">
+                    </div>
+                    <div class="row">
+                        <input type="button" value="7" onclick="form.disp.value+='7'">
+                        <input type="button" value="8" onclick="form.disp.value+='8'">
+                        <input type="button" value="9" onclick="form.disp.value+='9'">
+                        <input type="button" value="x" onclick="form.disp.value+='*'">
+                    </div>
+                    <div class="row">
+                        <input type="button" value="4" onclick="form.disp.value+='4'">
+                        <input type="button" value="5" onclick="form.disp.value+='5'">
+                        <input type="button" value="6" onclick="form.disp.value+='6'">
+                        <input type="button" value="-" onclick="form.disp.value+='-'">
+                    </div>
+                    <div class="row">
+                        <input type="button" value="1" onclick="form.disp.value+='1'">
+                        <input type="button" value="2" onclick="form.disp.value+='2'">
+                        <input type="button" value="3" onclick="form.disp.value+='3'">
+                        <input type="button" value="+" onclick="form.disp.value+='+'">
+                    </div>
+                    <div class="row">
+                        <input type="button" value="">
+                        <input type="button" value="0" onclick="form.disp.value+='0'">
+                        <input type="button" value="." onclick="form.disp.value+='.'">
+                        <input type="button" value="=" onclick="form.disp.value= eval(form.disp.value) ">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
