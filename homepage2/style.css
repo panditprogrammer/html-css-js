@@ -1,0 +1,341 @@
+/* css reset  */
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+ body{
+    background: rgba(255, 255, 255, 0.507);
+    min-width: 800px;
+} 
+                           /* navigation bar  */
+
+                           /* logo and image */
+#logo{
+    line-height:  70px;
+    position: absolute;
+    margin: 2px 15px;
+}
+#logo img{
+    height: 55px;
+    width: 70px;
+}
+
+
+                                                /* list and list styling  */
+                                                /* navbar styling here  */
+
+
+nav{
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    background-color: #00000050;
+    height: 70px;
+    width: 100%;
+    /* border: 2px solid red; */
+
+}
+ nav ul{
+     display: inline-block;
+     margin-left: 30px; 
+     
+} 
+
+
+                                     /* searchbox styling  */
+
+
+.searchbox{
+    display: inline-block;
+    margin-left: 40px;
+    /* border: 2px solid red;  */
+} 
+.searchbox input[type]{
+    height: 40px;
+    padding:10px 20px;
+    border-radius: 24px;
+    border-style: none;
+	outline:none;
+    
+    
+}
+.searchbox input[type=button]{
+    background: #c2c2c23f;
+    border: 2px solid #808080;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0px 5px 5px 0px;
+    
+
+}
+
+.searchbox input[type=button]:hover{
+    background: #fffcfc50;
+    cursor: pointer;
+    
+    
+}
+
+
+/* navbar background styling */
+/*
+nav::before{
+    content: " ";
+    background: #000;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+*/
+                                       /* list styling in navigation bar  */
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    /* user-select: none; */
+    text-decoration: none;
+    line-height: 70px;
+    
+} 
+
+                                                         /* anchor or menu styling here  */
+nav ul li a{
+    color: #fff;
+    line-height: 70px;
+    text-decoration: none;
+    padding: 3px 8px;
+    border-radius: 15px;
+    user-select: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s ease-in;
+}
+                      /* hover effect of anchor  */
+ #active ,nav ul li a:hover{
+    background-color: #fff;
+    color: #000;
+     
+}
+                               /* Home section styling */
+/*
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 300px;
+   height: 100%;
+    justify-content: center;
+    align-items: center;
+   
+
+}    
+*/
+                           /* home background styling */
+
+.home {
+    background-image: url(images/homepbg.jpg);
+    height: 400px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+
+/*
+#home::before{
+    content: " ";
+    background: url(images/homepbg.jpg) no-repeat center center;
+    position: absolute;
+    height: 578px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+*/
+
+                 /* utility classes    i am using                      */
+.center{
+    text-align: center;
+    align-items: center;
+}                 
+
+
+ .home h1{
+    position: relative;
+    top: 45px;
+    padding: 20px;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}                 
+ .home p{
+    position: relative;
+    top: 30px;
+    margin: auto;
+    width: 70%;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}  
+/* button stylingcss                */
+.home .btn{
+    border: 2px solid rgb(104, 104, 104);
+    background: rgb(255, 255, 255);
+    color: #000;
+    user-select: none;
+    font-size: 1.0rem;
+    border-radius: 25px;
+    color:black;
+    text-decoration:none;
+    padding: 12px 25px;
+    position: relative;
+    top: 100px;
+    transition: all 0.5s;
+    letter-spacing: 1px;
+
+    
+}
+/* .btn a{
+	
+} */
+              /* hover effect on button */
+.home .btn:hover{
+    background: rgb(231, 142, 40);
+    /* box-shadow: 0px 15px 15px 0px white; */
+    
+
+    
+}
+/* services section  */
+.servicecontainer{
+    text-align: center;
+    
+}
+
+.servicecontainer h1{
+    font-size: 2.5rem;
+
+
+}
+
+.button_order{
+    height: 34px;
+    width: 100px;
+    background: rgb(136, 107, 107);
+    cursor: pointer;
+    color: #fff;
+    border-radius: 23px;
+    margin: 12px auto;
+
+}
+#service{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+#service .box{
+    border: 0.1px solid rgb(194, 191, 191);
+    border-style: groove;
+    /* border-radius: px; */
+    width: 25%;
+    height: auto;
+    margin: 20px;
+    padding: 18px;
+    align-items: center;
+    background: rgba(138, 136, 136, 0.116);
+}
+                                      /* heading in box classes food ordering */
+#service .box h1{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+.head1{
+    padding: 4px ;
+    text-transform: capitalize;
+}
+#service .box img{
+    height: 100px;
+    border-radius: 10px;
+    margin: auto;
+    display: block
+}
+.imageh1{
+    height: 200px;
+}
+#clientsection{
+    background-color: #fff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(images/bg.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    /* margin-bottom: 25px; */
+    
+}
+#clientsection h1{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    /* color: #fff; */
+}
+#client{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    height: 400px;
+    margin: auto;
+    width: 45%;
+}
+
+.clientitem{
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+}
+.clientitem img{
+    height: 90px;
+    border-radius: 8px;
+}
+
+#contact h1{
+    font-size: 2.5rem;
+}
+#contact{
+    width: 100%;
+    height: 400px;
+    background:  linear-gradient(rgba(255, 254, 254, 0.61),rgba(255, 254, 254, 0.671)) ,url(logo/logo5.jpeg) no-repeat center center/ cover;
+   
+}
+#contactbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    
+
+}
+#contactbox textarea{
+    width: 100%;
+    height: 50px;
+    padding:0.5rem;
+}
+#formgroup{
+    padding: 10px;
+    font-size: 20px;
+}
+
+footer{
+    background: #000;
+    color: #fff;
+    height: 50px;
+    padding: 22px;
+    text-align: center;
+    font-size: 20px;
+    
+}

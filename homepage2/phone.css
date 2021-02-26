@@ -1,0 +1,42 @@
+
+
+ /* navigation section */
+
+
+
+/* home section */ 
+body{
+    /* background: rgb(202, 60, 60); */
+}
+
+/* services section */
+#service{
+    flex-direction: column;
+}
+#service .box{
+    border: 0.1px solid rgb(194, 191, 191);
+    border-style: groove;
+    /* border-radius: px; */
+    width: 75%;
+    height: auto;
+    margin: 20px;
+    padding: 10px;
+    align-items: center;
+    background: rgba(138, 136, 136, 0.116);
+}
+
+
+/* client section */
+#client{
+    height: auto;
+    width: 80%;
+}
+
+
+
+
+/* contact us  */
+
+
+
+/* foooter */
